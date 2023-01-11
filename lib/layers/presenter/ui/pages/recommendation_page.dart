@@ -1,6 +1,6 @@
 import 'package:coffee_cup/features/text/coffee_text.dart';
 import 'package:flutter/material.dart';
-import 'package:manga_easy_recommendation_screen/layers/presenter/ui/organisms/screen_recommedation_manga.dart';
+import 'package:manga_easy_recommendations/layers/presenter/ui/organisms/screen_recommedation_manga.dart';
 
 class RecommendationPage extends StatelessWidget {
   static const route = '/recommendation-screen';
