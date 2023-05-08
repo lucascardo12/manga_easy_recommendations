@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:manga_easy_recommendations/layers/presenter/ui/atoms/like_button.dart';
-import 'package:manga_easy_recommendations/layers/presenter/ui/molecules/manga_recommedation.dart';
+import 'package:manga_easy_recommendations/src/feactures/presenter/ui/atoms/like_button.dart';
+import 'package:manga_easy_recommendations/src/feactures/presenter/ui/molecules/manga_recommedation.dart';
 
 class ScreenRecomedationManga extends StatelessWidget {
   const ScreenRecomedationManga({super.key});

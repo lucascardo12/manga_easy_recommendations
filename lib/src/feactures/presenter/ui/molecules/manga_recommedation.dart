@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:manga_easy_recommendations/layers/presenter/ui/atoms/image_recommedation_container.dart';
-import 'package:manga_easy_recommendations/layers/presenter/ui/atoms/like_button.dart';
-import 'package:manga_easy_recommendations/layers/presenter/ui/atoms/name_and_author_recommedation.dart';
+import 'package:manga_easy_recommendations/src/feactures/presenter/ui/atoms/image_recommedation_container.dart';
+import 'package:manga_easy_recommendations/src/feactures/presenter/ui/atoms/like_button.dart';
+import 'package:manga_easy_recommendations/src/feactures/presenter/ui/atoms/name_and_author_recommedation.dart';
 
 class MangaRecomendation extends StatefulWidget {
   const MangaRecomendation({super.key});

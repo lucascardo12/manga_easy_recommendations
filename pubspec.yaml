@@ -5,26 +5,23 @@ homepage:
 publish_to: none
 
 environment:
-  sdk: '>=2.18.6 <3.0.0'
-  flutter: ">=1.17.0"
+  sdk: '>=2.19.2 <3.0.0'
+  
 
 dependencies:
   flutter:
     sdk: flutter
 
-  
   manga_easy_themes:
     git:
-      url: https://github.com/lucascardo12/manga_easy_themes.git
-      ref: 1.0.0
-  manga_easy_sdk:
-    git:
-      url: https://github.com/lucascardo12/manga_easy_sdk
-
+      url: https://github.com/manga-easy/manga_easy_themes.git
+      ref: 1.0.2
   coffee_cup:
     git:
-      url: https://github.com/lucascardo12/manga_easy_coffee_cup
+      url: https://github.com/manga-easy/manga_easy_coffee_cup.git
+      ref: v1.0.0
   like_button: ^2.0.5
+  
 
 dev_dependencies:
   flutter_test:
