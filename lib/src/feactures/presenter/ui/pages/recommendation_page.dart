@@ -27,20 +27,21 @@ class _RecommendationPageState extends State<RecommendationPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        leading: IconButton(
+          color: ThemeService.of.backgroundIcon,
+          onPressed: () {},
+          icon: const Icon(Icons.arrow_back_ios_rounded),
+        ),
+        title: const CoffeeText(
+          text: 'Recomendações',
+          typography: CoffeeTypography.title,
+        ),
+      ),
       body: CustomScrollView(
         slivers: [
-          SliverAppBar(
-            backgroundColor: Colors.transparent,
-            leading: IconButton(
-              color: ThemeService.of.backgroundIcon,
-              onPressed: () {},
-              icon: const Icon(Icons.arrow_back_ios_rounded),
-            ),
-            title: const CoffeeText(
-                text: 'Recomendações', typography: CoffeeTypography.title),
-          ),
           SliverToBoxAdapter(
-            
             child: EffectParallax(
               listRecommendation: ct.listRecommendation,
             ),
