@@ -9,7 +9,6 @@ class GetRecommendationUseCaseImp implements GetRecommendationUseCase {
 
   @override
   Future<List<RecommendationEntity>> get() async {
-  
-    return await  recommendationRepository.getRecommendation();
+    return await recommendationRepository.getRecommendation();
   }
 }

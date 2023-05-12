@@ -31,7 +31,9 @@ class _RecommendationPageState extends State<RecommendationPage> {
         backgroundColor: Colors.transparent,
         leading: IconButton(
           color: ThemeService.of.backgroundIcon,
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pop(context);
+          },
           icon: const Icon(Icons.arrow_back_ios_rounded),
         ),
         title: const CoffeeText(

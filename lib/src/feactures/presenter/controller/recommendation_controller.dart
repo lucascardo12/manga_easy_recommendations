@@ -14,7 +14,11 @@ class RecommendationController extends ChangeNotifier {
   }
 
   void getList() async {
-    listRecommendation = await _recommendation.get();
+    try {
+      listRecommendation = await _recommendation.get();
+    } catch (e) {
+      
+    }
     notifyListeners();
   }
 }
