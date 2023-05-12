@@ -3,11 +3,9 @@ import 'package:manga_easy_recommendations/src/feactures/domain/enitites/recomme
 import 'package:manga_easy_recommendations/src/feactures/presenter/ui/molecules/location_list__item.dart';
 import 'package:manga_easy_routes/manga_easy_routes.dart';
 
-const Color darkBlue = Color.fromARGB(255, 18, 32, 47);
-
-class EffectParallax extends StatelessWidget {
+class RecommendationDoneStatePage extends StatelessWidget {
   final List<RecommendationEntity> listRecommendation;
-  const EffectParallax({
+  const RecommendationDoneStatePage({
     super.key,
     required this.listRecommendation,
   });

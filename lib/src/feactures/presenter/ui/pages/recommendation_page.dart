@@ -2,7 +2,10 @@ import 'package:coffee_cup/features/text/coffee_text.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 import 'package:manga_easy_recommendations/src/feactures/presenter/controller/recommendation_controller.dart';
-import 'package:manga_easy_recommendations/src/feactures/presenter/ui/organisms/effect_paralax.dart';
+import 'package:manga_easy_recommendations/src/feactures/presenter/ui/pages/recommendation_done_state_page.dart';
+import 'package:manga_easy_recommendations/src/feactures/presenter/ui/pages/recommendation_initial_state_page.dart';
+import 'package:manga_easy_recommendations/src/feactures/presenter/ui/pages/recommendation_not_found_state_page.dart';
+import 'package:manga_easy_recommendations/src/feactures/presenter/ui/state/recommendation_state_imp.dart';
 import 'package:manga_easy_themes/manga_easy_themes.dart';
 
 class RecommendationPage extends StatefulWidget {
@@ -43,10 +46,25 @@ class _RecommendationPageState extends State<RecommendationPage> {
       ),
       body: CustomScrollView(
         slivers: [
-          SliverToBoxAdapter(
-            child: EffectParallax(
-              listRecommendation: ct.listRecommendation,
-            ),
+          Builder(
+            builder: (_) {
+              final state = ct.state;
+              if (state is RecommendationDoneState) {
+                return SliverToBoxAdapter(
+                  child: RecommendationDoneStatePage(
+                    listRecommendation: ct.listRecommendation,
+                  ),
+                );
+              }
+              if (state is RecommendationNotfoundState) {
+                return const SliverToBoxAdapter(
+                  child: RecommendationNotFoundStatePage(),
+                );
+              }
+              return const SliverToBoxAdapter(
+                child: RecommendationInitialStatePage(),
+              );
+            },
           ),
         ],
       ),
