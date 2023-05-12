@@ -5,7 +5,7 @@ class RecommendationDto {
   String link;
   int datacria;
   int? createdat;
-  int? updateat;
+  int? updatedat;
 
   RecommendationDto({
     required this.uid,
@@ -14,6 +14,6 @@ class RecommendationDto {
     required this.link,
     required this.datacria,
     required this.createdat,
-    required this.updateat,
+    required this.updatedat,
   });
 }

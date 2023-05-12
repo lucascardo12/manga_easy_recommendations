@@ -1,4 +1,5 @@
 import 'package:manga_easy_recommendations/src/feactures/data/dtos/recommendation_dto.dart';
+import 'package:manga_easy_recommendations/src/feactures/domain/enitites/recommendation_entity.dart';
 
 class RecommendationDtoMapper {
   RecommendationDto fromJson(Map<String, dynamic> json) {
@@ -9,7 +10,18 @@ class RecommendationDtoMapper {
       link: json['link'],
       datacria: json['datacria'] ?? 0,
       createdat: json['_createdat'],
-      updateat: json['_updatedat'],
+      updatedat: json['_updatedat'],
+    );
+  }
+
+  RecommendationEntity toEntity(RecommendationDto dto) {
+    return RecommendationEntity(
+      uid: dto.uid,
+      uniqueid: dto.uniqueid,
+      title: dto.title,
+      link: dto.link,
+      createdat: dto.createdat ?? dto.datacria,
+      updatedat: dto.updatedat ?? dto.datacria,
     );
   }
 
@@ -21,7 +33,7 @@ class RecommendationDtoMapper {
       'link': recommendation.link,
       'datacria': recommendation.datacria,
       '_createdat': recommendation.createdat,
-      '_updatedat': recommendation.updateat,
+      '_updatedat': recommendation.updatedat,
     };
   }
 }
