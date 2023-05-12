@@ -1,39 +1,24 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+<h1 align="center">  <img src="https://media.discordapp.net/attachments/1056304767023972373/1056304821419905124/logo_manga_easy.png?width=899&height=535" width=400px>  
+</h1>
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+# 🚨 O que é o Manga Easy
+É um aplicativo de mangas criado no entuito de ler, baixar e favoritar os seus mangas favoritos.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
+# 🕵️‍♂️ Sobre Projeto
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+Package criado para ser a tela de recomendações de manga no aplicativo do Manga Easy.
 
-## Features
+# ⛏️ Tecnologias
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- [Dart](https://dart.dev/)
+- [Flutter](https://flutter.dev/)
 
-## Getting started
+# 🚧 Download
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+[Clique aqui para baixar](https://objectstorage.sa-vinhedo-1.oraclecloud.com/n/axs7rpnviwd0/b/manga-easy-apks/o/manga-easy-latest.apk)
 
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
-```
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+# 🌁 Imagens 
+<!-- <p>
+<img src="https://media.discordapp.net/attachments/1047224340791435274/1104455020935643258/image.png?width=248&height=549"  >
+<img src="https://media.discordapp.net/attachments/1047224340791435274/1104455060353732638/image.png?width=242&height=546"  >
+</p> -->
