@@ -2,19 +2,29 @@
 </h1>
 
 # 🚨 O que é o Manga Easy
-É um aplicativo de mangas criado no entuito de ler, baixar e favoritar os seus mangas favoritos.
+Manga Easy é um aplicativo de mangá projetado para fornecer aos usuários uma maneira fácil e conveniente de ler mangás em seus dispositivos móveis. Com uma interface de usuário intuitiva e fácil de usar, o aplicativo permite que os usuários naveguem por uma ampla variedade de mangás de diferentes gêneros e autores.
 
-# 🕵️‍♂️ Sobre Projeto
+O aplicativo é gratuito para download e esta disponivel na área de download logo a baixo.
 
-Package criado para ser a tela de recomendações de manga no aplicativo do Manga Easy.
+# 🕵️‍♂️ Sobre o repositório
+
+ Este MicroApp adiciona uma nova camada de funcionalidade ao app, fornecendo um sistema de recomendação para ajudar os usuários a descobrirem novos mangás.
 
 # ⛏️ Tecnologias
 
 - [Dart](https://dart.dev/)
 - [Flutter](https://flutter.dev/)
 
+# 🖌️ Designer-Patterns
+
+- Atomic Design
+- BDD
+- Clean Architecture
+- SOLID
+
 # 🚧 Download
 
+O aplicativo esta disponivel atualmente para Android e caso tenha interesse em conhecer
 [Clique aqui para baixar](https://objectstorage.sa-vinhedo-1.oraclecloud.com/n/axs7rpnviwd0/b/manga-easy-apks/o/manga-easy-latest.apk)
 
 # 🌁 Imagens 
