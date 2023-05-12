@@ -3,17 +3,15 @@ class RecommendationEntity {
   String uniqueid;
   String title;
   String link;
-  int datacria;
   int createdat;
-  int updateat;
+  int updatedat;
 
   RecommendationEntity({
     required this.uid,
     required this.uniqueid,
     required this.title,
     required this.link,
-    required this.datacria,
     required this.createdat,
-    required this.updateat,
+    required this.updatedat,
   });
 }
