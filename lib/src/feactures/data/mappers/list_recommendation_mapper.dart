@@ -1,22 +1,27 @@
-import 'package:manga_easy_recommendations/src/feactures/data/dtos/list_recommendation_dto.dart';
+import 'package:manga_easy_recommendations/src/feactures/data/dtos/recommendation_dto.dart';
 
-class ListRecommendationMapper {
-  ListRecommendationDto fromJson(Map<String, dynamic> json) {
-    return ListRecommendationDto(
-        status: json['status'],
-        message: json['message'],
-        total: json['total'],
-        data: json['data']
-            .map<Map<String, dynamic>>((e) => Map<String, dynamic>.from(e))
-            .toList());
+class RecommendationDtoMapper {
+  RecommendationDto fromJson(Map<String, dynamic> json) {
+    return RecommendationDto(
+      uid: json['_uid'],
+      uniqueid: json['uniqueid'],
+      title: json['title'],
+      link: json['link'],
+      datacria: json['datacria'] ?? 0,
+      createdat: json['_createdat'],
+      updateat: json['_updatedat'],
+    );
   }
 
-  Map<String, dynamic> toJson(ListRecommendationDto recommendation) {
+  Map<String, dynamic> toJson(RecommendationDto recommendation) {
     return {
-      'status': recommendation.status,
-      'message': recommendation.message,
-      'total': recommendation.total,
-      'data': recommendation.data,
+      '_uid': recommendation.uid,
+      'uniqueid': recommendation.uniqueid,
+      'title': recommendation.title,
+      'link': recommendation.link,
+      'datacria': recommendation.datacria,
+      '_createdat': recommendation.createdat,
+      '_updatedat': recommendation.updateat,
     };
   }
 }
