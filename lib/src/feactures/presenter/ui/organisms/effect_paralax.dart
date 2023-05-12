@@ -15,7 +15,7 @@ class EffectParallax extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: MediaQuery.of(context).size.height ,
+      height: MediaQuery.of(context).size.height,
       child: Padding(
         padding: const EdgeInsets.only(bottom: 100),
         child: ListView.builder(
@@ -27,7 +27,7 @@ class EffectParallax extends StatelessWidget {
                 EasyNavigator.of(context).pushNamed(
                   route: EasyRoutes.mangaLis,
                   arguments: {
-                    'nameManga': recommend.uniqueid,
+                    'nameManga': recommend.title,
                     'isUniqueId': true,
                   },
                 );
