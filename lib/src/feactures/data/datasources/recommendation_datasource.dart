@@ -1,5 +1,5 @@
-import 'package:manga_easy_recommendations/src/feactures/data/dtos/list_recommendation_dto.dart';
+import 'package:manga_easy_recommendations/src/feactures/data/dtos/recommendation_dto.dart';
 
 abstract class RecommendationDataSource {
-  Future<ListRecommendationDto> list();
+  Future<List<RecommendationDto>> list();
 }
