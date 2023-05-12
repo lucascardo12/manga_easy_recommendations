@@ -20,7 +20,7 @@ class BuildParallaxBackground {
           filtraImg: true,
           cover: linkImage,
           key: backgroundImageKey,
-          height: 240,
+          height: 260,
         ),
       ],
     );

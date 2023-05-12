@@ -14,26 +14,32 @@ class EffectParallax extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      itemCount: listRecommendation.length,
-      itemBuilder: (context, index) {
-        final recommend = listRecommendation[index];
-        return GestureDetector(
-          onTap: () {
-            EasyNavigator.of(context).pushNamed(
-              route: EasyRoutes.mangaLis,
-              arguments: {
-                'nameManga': recommend.uniqueid,
-                'isUniqueId': true,
+    return SizedBox(
+      height: MediaQuery.of(context).size.height ,
+      child: Padding(
+        padding: const EdgeInsets.only(bottom: 100),
+        child: ListView.builder(
+          itemCount: listRecommendation.length,
+          itemBuilder: (context, index) {
+            final recommend = listRecommendation[index];
+            return GestureDetector(
+              onTap: () {
+                EasyNavigator.of(context).pushNamed(
+                  route: EasyRoutes.mangaLis,
+                  arguments: {
+                    'nameManga': recommend.uniqueid,
+                    'isUniqueId': true,
+                  },
+                );
               },
+              child: LocationListItem(
+                imageUrl: recommend.link,
+                name: recommend.title,
+              ),
             );
           },
-          child: LocationListItem(
-            imageUrl: recommend.link,
-            name: recommend.title,
-          ),
-        );
-      },
+        ),
+      ),
     );
   }
 }
