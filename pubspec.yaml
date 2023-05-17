@@ -18,7 +18,7 @@ dependencies:
   coffee_cup:
     git:
       url: https://github.com/manga-easy/manga_easy_coffee_cup.git
-      ref: v1.0.0
+      ref: v1.1.0
   client_driver:
     git:
       url: https://github.com/manga-easy/manga_easy_client_driver.git

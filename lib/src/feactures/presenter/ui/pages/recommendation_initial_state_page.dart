@@ -8,12 +8,8 @@ class RecommendationInitialStatePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        CoffeeImage.unicorn(
-          AssetsUnicorn.lendo,
-          width: 125,
-          height: 125,
-        ),
-        const CoffeeText(text: 'Carregando...')
+        CoffeeImage.cats(AssetsCats.runningCircle),
+        const CoffeeText(text: 'Carregando...'),
       ],
     );
   }
