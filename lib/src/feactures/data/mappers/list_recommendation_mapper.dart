@@ -4,13 +4,13 @@ import 'package:manga_easy_recommendations/src/feactures/domain/enitites/recomme
 class RecommendationDtoMapper {
   RecommendationDto fromJson(Map<String, dynamic> json) {
     return RecommendationDto(
-      uid: json['_uid'],
+      uid: json['uid'],
       uniqueid: json['uniqueid'],
       title: json['title'],
       link: json['link'],
       datacria: json['datacria'] ?? 0,
-      createdat: json['_createdat'],
-      updatedat: json['_updatedat'],
+      createdat: json['createdat'],
+      updatedat: json['updatedat'],
     );
   }
 
@@ -27,13 +27,13 @@ class RecommendationDtoMapper {
 
   Map<String, dynamic> toJson(RecommendationDto recommendation) {
     return {
-      '_uid': recommendation.uid,
+      'uid': recommendation.uid,
       'uniqueid': recommendation.uniqueid,
       'title': recommendation.title,
       'link': recommendation.link,
       'datacria': recommendation.datacria,
-      '_createdat': recommendation.createdat,
-      '_updatedat': recommendation.updatedat,
+      'createdat': recommendation.createdat,
+      'updatedat': recommendation.updatedat,
     };
   }
 }
