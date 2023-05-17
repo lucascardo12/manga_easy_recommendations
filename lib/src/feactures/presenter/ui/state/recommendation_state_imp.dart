@@ -3,7 +3,11 @@ import 'package:manga_easy_recommendations/src/feactures/presenter/ui/state/reco
 
 class RecommendationInitialState extends RecommendationState {}
 
-class RecommendationNotfoundState extends RecommendationState {}
+class RecommendationNotfoundState extends RecommendationState {
+  final String mensage;
+
+  RecommendationNotfoundState(this.mensage);
+}
 
 class RecommendationDoneState extends RecommendationState {
   final List<RecommendationEntity> listRecommendation;

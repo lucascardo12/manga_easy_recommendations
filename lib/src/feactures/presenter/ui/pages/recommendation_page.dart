@@ -57,8 +57,9 @@ class _RecommendationPageState extends State<RecommendationPage> {
                 );
               }
               if (state is RecommendationNotfoundState) {
-                return const SliverToBoxAdapter(
-                  child: RecommendationNotFoundStatePage(),
+                return SliverToBoxAdapter(
+                  child:
+                      RecommendationNotFoundStatePage(mensage: state.mensage),
                 );
               }
               return const SliverToBoxAdapter(
