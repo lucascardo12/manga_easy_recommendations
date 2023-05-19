@@ -1,5 +1,5 @@
 import 'package:manga_easy_recommendations/src/feactures/data/datasources/recommendation_datasource.dart';
-import 'package:manga_easy_recommendations/src/feactures/data/mappers/list_recommendation_mapper.dart';
+import 'package:manga_easy_recommendations/src/feactures/data/mappers/recommendation_mapper.dart';
 import 'package:manga_easy_recommendations/src/feactures/domain/enitites/recommendation_entity.dart';
 import 'package:manga_easy_recommendations/src/feactures/domain/repositories/recommendation_repository.dart';
 

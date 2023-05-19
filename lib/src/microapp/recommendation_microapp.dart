@@ -3,7 +3,7 @@ import 'package:get_it/get_it.dart';
 import 'package:manga_easy_recommendations/src/core/services/api_error_service.dart';
 import 'package:manga_easy_recommendations/src/feactures/data/datasources/recommendation_datasource.dart';
 import 'package:manga_easy_recommendations/src/feactures/data/datasources/recommendation_datasource_imp.dart';
-import 'package:manga_easy_recommendations/src/feactures/data/mappers/list_recommendation_mapper.dart';
+import 'package:manga_easy_recommendations/src/feactures/data/mappers/recommendation_mapper.dart';
 import 'package:manga_easy_recommendations/src/feactures/data/repositories/recommendation_repository_imp.dart';
 import 'package:manga_easy_recommendations/src/feactures/domain/repositories/recommendation_repository.dart';
 import 'package:manga_easy_recommendations/src/feactures/domain/usecases/get_recommendation_usecase.dart';

@@ -4,7 +4,7 @@ import 'package:manga_easy_recommendations/src/core/request/result_entity.dart';
 import 'package:manga_easy_recommendations/src/core/services/api_error_service.dart';
 import 'package:manga_easy_recommendations/src/feactures/data/datasources/recommendation_datasource.dart';
 import 'package:manga_easy_recommendations/src/feactures/data/dtos/recommendation_dto.dart';
-import 'package:manga_easy_recommendations/src/feactures/data/mappers/list_recommendation_mapper.dart';
+import 'package:manga_easy_recommendations/src/feactures/data/mappers/recommendation_mapper.dart';
 
 class RecommendationDataSourceImp implements RecommendationDataSource {
   final ClientRequest _clientRequest;
