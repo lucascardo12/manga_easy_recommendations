@@ -9,7 +9,7 @@ import 'package:manga_easy_recommendations/src/feactures/data/mappers/recommenda
 class RecommendationDataSourceImp implements RecommendationDataSource {
   final ClientRequest _clientRequest;
   final String path = 'recommendations';
-  final String url = 'http://monolito.lucas-cm.com.br';
+  final String url = 'https://monolito.lucas-cm.com.br';
   final String version = 'v1';
   final ApiErrorService _apiErrorService;
   final RecommendationDtoMapper _mapper;
