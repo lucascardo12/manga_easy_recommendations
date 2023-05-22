@@ -1,6 +1,6 @@
 name: manga_easy_recommendations
 description: A new Flutter package project.
-version: 0.0.1
+version: 1.0.0
 homepage:
 publish_to: none
 
@@ -22,11 +22,11 @@ dependencies:
   client_driver:
     git:
       url: https://github.com/manga-easy/manga_easy_client_driver.git
-      ref: v1.1.1
+      ref: v1.1.2
   manga_easy_routes:
     git:
       url: https://github.com/manga-easy/manga_easy_routes.git
-      ref: v1.0.1
+      ref: v1.0.2
   get_it: ^7.2.0
 
 dev_dependencies:
