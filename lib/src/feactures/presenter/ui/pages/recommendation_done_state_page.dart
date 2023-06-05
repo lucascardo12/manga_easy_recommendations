@@ -34,7 +34,7 @@ class RecommendationDoneStatePage extends StatelessWidget {
               child: LocationListItem(
                 imageUrl: recommend.link,
                 name: recommend.title,
-                artistic: recommend.artisticname,
+                artist: recommend.artistname,
                 date: DateFormat('dd/MM/yyyy').format(
                   DateTime.fromMillisecondsSinceEpoch(
                     recommend.createdat,

@@ -6,7 +6,7 @@ import 'package:manga_easy_recommendations/src/feactures/presenter/ui/atomic/bui
 class LocationListItem extends StatelessWidget {
   final String imageUrl;
   final String name;
-  final String artistic;
+  final String artist;
   final String date;
   final GlobalKey _backgroundImageKey = GlobalKey();
 
@@ -14,7 +14,7 @@ class LocationListItem extends StatelessWidget {
     super.key,
     required this.imageUrl,
     required this.name,
-    required this.artistic,
+    required this.artist,
     required this.date,
   });
 
@@ -35,7 +35,7 @@ class LocationListItem extends StatelessWidget {
               BuildGradient().buildGradient(),
               BuildTitleAndSubtitle(
                 name: name,
-                artistic: artistic,
+                artistic: artist,
                 date: date,
               ).titleAndSubtitle(),
             ],
