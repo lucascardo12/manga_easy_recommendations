@@ -6,12 +6,16 @@ import 'package:manga_easy_recommendations/src/feactures/presenter/ui/atomic/bui
 class LocationListItem extends StatelessWidget {
   final String imageUrl;
   final String name;
+  final String artist;
+  final String date;
   final GlobalKey _backgroundImageKey = GlobalKey();
 
   LocationListItem({
     super.key,
     required this.imageUrl,
     required this.name,
+    required this.artist,
+    required this.date,
   });
 
   @override
@@ -29,7 +33,11 @@ class LocationListItem extends StatelessWidget {
                 linkImage: imageUrl,
               ).ParallaxBackground(context),
               BuildGradient().buildGradient(),
-              BuildTitleAndSubtitle(name: name).titleAndSubtitle(),
+              BuildTitleAndSubtitle(
+                name: name,
+                artistic: artist,
+                date: date,
+              ).titleAndSubtitle(),
             ],
           ),
         ),

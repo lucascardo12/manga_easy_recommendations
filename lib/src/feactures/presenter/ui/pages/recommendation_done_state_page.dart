@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 import 'package:manga_easy_recommendations/src/feactures/domain/enitites/recommendation_entity.dart';
 import 'package:manga_easy_recommendations/src/feactures/presenter/ui/molecules/location_list__item.dart';
 import 'package:manga_easy_routes/manga_easy_routes.dart';
@@ -33,6 +34,12 @@ class RecommendationDoneStatePage extends StatelessWidget {
               child: LocationListItem(
                 imageUrl: recommend.link,
                 name: recommend.title,
+                artist: recommend.artistname,
+                date: DateFormat('dd/MM/yyyy').format(
+                  DateTime.fromMillisecondsSinceEpoch(
+                    recommend.createdat,
+                  ),
+                ),
               ),
             );
           },
