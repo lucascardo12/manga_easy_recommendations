@@ -8,7 +8,7 @@ class BuildParallaxBackground {
 
   BuildParallaxBackground({required this.backgroundImageKey, required this.linkImage});
 
-  Widget ParallaxBackground(BuildContext context) {
+  Widget parallaxBackground(BuildContext context) {
     return Flow(
       delegate: ParallaxFlowDelegate(
         scrollable: Scrollable.of(context),
@@ -20,7 +20,7 @@ class BuildParallaxBackground {
           filtraImg: true,
           cover: linkImage,
           key: backgroundImageKey,
-          height: 260,
+          height: 240,
         ),
       ],
     );

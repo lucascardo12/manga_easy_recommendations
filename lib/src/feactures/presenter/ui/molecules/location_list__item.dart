@@ -22,23 +22,26 @@ class LocationListItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-      child: AspectRatio(
-        aspectRatio: 16 / 9,
-        child: ClipRRect(
-          borderRadius: BorderRadius.circular(16),
-          child: Stack(
-            children: [
-              BuildParallaxBackground(
-                backgroundImageKey: _backgroundImageKey,
-                linkImage: imageUrl,
-              ).ParallaxBackground(context),
-              BuildGradient().buildGradient(),
-              BuildTitleAndSubtitle(
-                name: name,
-                artistic: artist,
-                date: date,
-              ).titleAndSubtitle(),
-            ],
+      child: SizedBox(
+        height: 220,
+        child: AspectRatio(
+          aspectRatio: 16 / 9,
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(16),
+            child: Stack(
+              children: [
+                BuildParallaxBackground(
+                  backgroundImageKey: _backgroundImageKey,
+                  linkImage: imageUrl,
+                ).parallaxBackground(context),
+                BuildGradient().buildGradient(),
+                BuildTitleAndSubtitle(
+                  name: name,
+                  artistic: artist,
+                  date: date,
+                ).titleAndSubtitle(),
+              ],
+            ),
           ),
         ),
       ),
