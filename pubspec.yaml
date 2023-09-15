@@ -22,13 +22,19 @@ dependencies:
   client_driver:
     git:
       url: https://github.com/manga-easy/manga_easy_client_driver.git
-      ref: v1.1.1
+      ref: v1.2.3
   manga_easy_routes:
     git:
       url: https://github.com/manga-easy/manga_easy_routes.git
       ref: v1.0.1
   get_it: ^7.2.0
   intl: ^0.18.1
+
+dependency_overrides:
+  manga_easy_sdk:
+     git:
+      url: https://github.com/manga-easy/manga_easy_sdk.git
+      ref: v1.6.0
 
 dev_dependencies:
   flutter_test:
